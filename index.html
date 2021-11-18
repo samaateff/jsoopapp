@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>quiz app js oop</title>
+    </head>
+    <body>
+
+        <div class="final" style="display:none;">
+          <h2>you answer all questions</h2>
+          <p class="score"></p>
+          <h4>try again</h4>
+          <button id="again">again</button>
+        </div>
+
+        <div class="quiz">
+          <div class="count">
+              <p class="current">0</p>
+              <p class="">/</p>
+              <p class="total"></p>
+          </div>
+
+           <h3 id="questions"></h3>
+           
+           <label id="a1" class="container"></label>
+           <label id="a2" class="container"></label>
+           <label id="a3" class="container"></label>
+           <label id="a4" class="container"></label>
+ 
+           <button id="next">submit</button>
+        </div>
+
+       <div class="settings">
+        <h2> quiz app</h2>
+        <label for="category">select category</label>
+        <select name="" id="category">
+          <option value="9">general knowledge</option>
+          <option value="27">animals</option>
+          <option value="23">history</option>
+          <option value="21">sports</option>
+        </select>
+
+        <div>
+            <label for="difficulty">difficulty</label>
+        
+            <label for="easy">
+                <input type="radio" id="easy"/>
+                easy
+            </label>
+
+            <label for="medium">
+                <input type="radio" id="medium"/>
+                medium
+            </label>
+
+            <label for="hard">
+                <input type="radio" id="hard"/>
+                hard
+            </label>
+        </div>
+
+        <div>
+           <label for="nQuestions">number op questions</label>
+           <input type="number" id="nQuestions"/>
+        </div>
+
+        <button id="startBtn" class="submit">start quiz</button>
+       </div>
+
+        <script src="main.js" type="module"></script>
+    </body>
+</html>
